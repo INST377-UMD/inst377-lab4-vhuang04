@@ -1,0 +1,20 @@
+#box {float: left;
+    border-style: solid;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 20%;
+    background: lightblue;
+    
+    
+}
+#box2{float: left;
+    border-style: solid;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 20%;
+    background: lightblue;
+    margin-left: 50px;
+    text-align: center;
+}
