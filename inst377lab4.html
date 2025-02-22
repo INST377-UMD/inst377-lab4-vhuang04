@@ -37,12 +37,47 @@
                 {document.body.style.backgroundColor="red";
                 }
             }
-
-            
-          </script> 
+            </script> 
     </div> 
 
+    <!--Text Tester Section-->
+    <div id="box3">
+        <form name="Val" onsubmit="return tester()">
+            <label for="textbox"> Text Tester: </label>
+            <input type="text" id="textbox" name="textbox">
+            <button type="submit" >Validate Text </button>        
+        </form>           
+            <!--JavaScript Code-->
+            <script>
+                function tester(){
+                    console.log("Validating user input", document.Val.textbox.value)
+                    const validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/; 
+                    if (document.Val.textbox.value.trim()==""){// removes whitespace 
+                        document.body.style.background = "beige"
+                        alert("Enter any word to validate to text the alert!")
+                        return false;
+                    } 
 
+
+                    if (validation.test(document.Val.textbox.value)){
+                        document.body.style.background = "red";
+                        alert("NOOOOOOO!!!")
+                        return false
+                    }
+                }  
+
+            </script>
+    </div>
+<!-- Adding Text Section -->
+    <div id = "box4">
+        <button onclick="addtext()">Add Text</button>
+    </div>
+    <!--JavaScript Code-->
+    <script>
+        function addtext(){
+            
+        }
+    </script>
 
 </body>   
 

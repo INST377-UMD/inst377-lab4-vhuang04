@@ -18,3 +18,29 @@
     margin-left: 50px;
     text-align: center;
 }
+
+#box3 {
+    border-style: solid;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 20%;
+    background: lightblue;
+    margin-top: 100px;
+    text-align: center;
+    float: left
+    clear:both;
+}
+
+#box4 {
+    border-style: solid;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 20%;
+    background: lightblue;
+    text-align: center;
+    float:left
+    
+
+}
