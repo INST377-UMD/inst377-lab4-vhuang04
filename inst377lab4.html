@@ -9,7 +9,7 @@
 </head>
 <body>
     <!--Alert Me Section-->
-    <div class="box" id="box1">
+    <div id="box">
         <form id="alert">
             <label for="name">Name:</label>
             <input type="text" id="name" name="fullname">
@@ -26,7 +26,7 @@
             }
         </script>
     <!-- Change Color Section -->
-    <div class ="box" id ="box2">
+    <div id ="box">
         <button onclick="changecolor()" id="colchan"> Change Color </button>
           <!--JavaScript Code--> 
           <script>
@@ -41,7 +41,7 @@
     </div> 
 
     <!--Text Tester Section-->
-    <div class ="box" id="box3">
+    <div id="box">
         <form name="Val" onsubmit="return tester()">
             <label for="textbox"> Text Tester: </label>
             <input type="text" id="textbox" name="textbox">
@@ -69,18 +69,15 @@
             </script>
     </div>
 <!-- Adding Text Section -->
-    <div class = "box" id="box4">
+    <div id="box">
         <button onclick="addtext()" id="btn">Add Text</button>
     </div>
     <!--JavaScript Code-->
     <script>
         function addtext(){
             console.log('Adding text');
-            const button = document.getElementById("btn");
             const title = document.getElementById("header_title")
-            if (title){
                 title.textContent += "-Adding text";
-            }
             }
     </script>
 
