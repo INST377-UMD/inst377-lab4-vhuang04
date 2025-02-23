@@ -1,0 +1,15 @@
+
+#box {
+    border-style: solid;
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 10px;
+    width: 40%;
+    background: lightblue;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+
+
+}

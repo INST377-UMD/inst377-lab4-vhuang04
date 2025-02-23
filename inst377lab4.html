@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title> INST377: JavaScript </title>
+<link rel="stylesheet" type="text/css" href="377lab4page.css">
+
+<head>
+
+    <h1 id ="header_title">INST377 - Lab 4 </h1>
+</head>
+<body>
+    <!--Alert Me Section-->
+    <div id="box">
+        <form id="alert">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="fullname">
+            <button onclick="alertme() " id="btnname"> Alert Me!</button>
+        </form>
+    </div>
+        <!--JavaScript Code-->
+        <script type="text/javascript">
+            const name = document.getElementById("name");
+            document.getElementById("btnname")
+
+            function alertme(){
+                alert("Hi "+ name.value)
+            }
+        </script>
+    <!-- Change Color Section -->
+    <div id ="box">
+        <button onclick="changecolor()" id="colchan"> Change Color </button>
+          <!--JavaScript Code--> 
+          <script>
+            function changecolor(){
+               if (document.body.style.backgroundColor=="red")
+                {document.body.style.backgroundColor="green";}
+                else
+                {document.body.style.backgroundColor="red";
+                }
+            }
+            </script> 
+    </div> 
+
+    <!--Text Tester Section-->
+    <div id="box">
+        <form name="Val" onsubmit="return tester()">
+            <label for="textbox"> Text Tester: </label>
+            <input type="text" id="textbox" name="textbox">
+            <button type="submit" >Validate Text </button>        
+        </form>           
+            <!--JavaScript Code-->
+            <script>
+                function tester(){
+                    console.log("Validating user input", document.Val.textbox.value)
+                    const validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/; 
+                    if (document.Val.textbox.value.trim()==""){// removes whitespace 
+                        document.body.style.background = "beige"
+                        alert("Enter any word to validate to text the alert!")
+                        return false;
+                    } 
+
+
+                    if (validation.test(document.Val.textbox.value)){
+                        document.body.style.background = "red";
+                        alert("NOOOOOOO!!!")
+                        return false
+                    }
+                }  
+
+            </script>
+    </div>
+<!-- Adding Text Section -->
+    <div id="box">
+        <button onclick="addtext()" id="btn">Add Text</button>
+    </div>
+    <!--JavaScript Code-->
+    <script>
+        function addtext(){
+            console.log('Adding text');
+            const title = document.getElementById("header_title")
+                title.textContent += "-Adding text";
+            }
+    </script>
+
+</body>   
+
+</html>
