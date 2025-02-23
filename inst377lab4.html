@@ -5,11 +5,11 @@
 
 <head>
 
-    <h1>INST377 - Lab 4 </h1>
+    <h1 id ="header_title">INST377 - Lab 4 </h1>
 </head>
 <body>
     <!--Alert Me Section-->
-    <div id="box">
+    <div class="box" id="box1">
         <form id="alert">
             <label for="name">Name:</label>
             <input type="text" id="name" name="fullname">
@@ -26,7 +26,7 @@
             }
         </script>
     <!-- Change Color Section -->
-    <div id ="box2">
+    <div class ="box" id ="box2">
         <button onclick="changecolor()" id="colchan"> Change Color </button>
           <!--JavaScript Code--> 
           <script>
@@ -41,7 +41,7 @@
     </div> 
 
     <!--Text Tester Section-->
-    <div id="box3">
+    <div class ="box" id="box3">
         <form name="Val" onsubmit="return tester()">
             <label for="textbox"> Text Tester: </label>
             <input type="text" id="textbox" name="textbox">
@@ -69,14 +69,19 @@
             </script>
     </div>
 <!-- Adding Text Section -->
-    <div id = "box4">
-        <button onclick="addtext()">Add Text</button>
+    <div class = "box" id="box4">
+        <button onclick="addtext()" id="btn">Add Text</button>
     </div>
     <!--JavaScript Code-->
     <script>
         function addtext(){
-            
-        }
+            console.log('Adding text');
+            const button = document.getElementById("btn");
+            const title = document.getElementById("header_title")
+            if (title){
+                title.textContent += "-Adding text";
+            }
+            }
     </script>
 
 </body>   
